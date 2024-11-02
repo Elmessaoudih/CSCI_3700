@@ -15,19 +15,17 @@ Quick Start
    sudo apt-get install python3-venv
 
 2. **Create and activate the virtual environment**:
-
-```bash
+   ```bash
 python3 -m venv python_venv
 source python_venv/bin/activate
 
-3. **Install dependencies: To install the required Python packages, run**:
-
-```bash
+3. **Install dependencies**: To install the required Python packages, run:
+   ```bash
 pip3 install -r requirements.txt
 
 4. **Set up PostgreSQL and create tables: Make sure PostgreSQL is running. Connect to it and create these tables for our baskets**:
 
-```sql
+   ```sql
 CREATE TABLE basket_a (
     a INT PRIMARY KEY,
     fruit_a VARCHAR(100) NOT NULL
@@ -57,8 +55,7 @@ VALUES
 Make sure the connection details (username, password, host, port, and database name) are correct in main.py.
 
 6. **Run the Flask app: Start the server with**:
-
-```bash
+   ```bash
 python3 main.py
 
 ### Endpoints
